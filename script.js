@@ -85,7 +85,7 @@ function clear() {
         wholeGrid.forEach(div => div.style.backgroundColor = '#fff');
         wholeGrid.forEach(div => div.style.border = '1px solid black');
         let user = prompt('What size do you want your grid to be?');
-        //Doesn't seem to work when changing size, impression I'm getting is it's stacking on the current function call of 16,16 and creating a weird rectanular shape? Or not recognizing the div layout from previous function
+        cleargrid();
         if(user === null || user < 1) {
             createDivs(16, 16);
             greyBtn();
@@ -104,3 +104,7 @@ function clear() {
 buttons.appendChild(clrbtn).classList.add('btn');    
 }
 
+//Function fixes issue so I can adjust the size of the grid when clearing
+function cleargrid() {
+     container.innerHTML = '';
+}
