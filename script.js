@@ -91,14 +91,14 @@ function clear() {
             greyBtn();
             blackBtn();
             rgbBtn();
-            clear();
+            // clear();
         }
         else{
             createDivs(user, user);
             greyBtn();
             blackBtn();
             rgbBtn();
-            clear();
+            // clear();
         }
     })
 buttons.appendChild(clrbtn).classList.add('btn');    
